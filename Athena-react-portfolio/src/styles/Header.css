@@ -1,0 +1,26 @@
+:root {
+  --light-beige: #F0F1ED;
+  --medium-green: #808D63 ;
+  --dark-green: #4F6034;
+}
+
+.header {
+  background: var(--medium-green);
+  height: 200px;
+  display:flex;
+  padding: 20px 70px;
+
+}
+
+.header h1 {
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+}
+
+.header p {
+  font-size: 1rem;
+  padding: 30px;
+}

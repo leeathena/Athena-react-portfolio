@@ -1,0 +1,23 @@
+:root {
+  --light-beige: #F0F1ED;
+  --medium-green: #808D63 ;
+  --dark-green: #4F6034;
+}
+
+.avatar {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: var(--medium-green);
+}
+
+.avatar img {
+  max-width: 100%; /* Ensures the image is responsive and fits its container */
+  height: auto;
+}
+
+.avatar h1 {
+  color: var(--light-beige);
+  font-size: 4rem;
+}
