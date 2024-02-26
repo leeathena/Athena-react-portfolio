@@ -1,19 +1,20 @@
-import Header from "./components/Header";
-import Avatar from "./components/Avatar";
-import Navbar from "./components/Navbar";
+import Home from './Pages/Home'; 
+import Contact from "./Pages/Contact";
+import Resume from "./Pages/Resume";
+import { BrowserRouter  } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+
 
 
 
 function App() {
-  return 
+  return (
     <>
-      <Navbar />
-        <Routes>
-        <Routes path="/" element={/}
-          
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/resume" element={<Resume/>}/>
         </Routes>
-      <Avatar />
-      <Header />
     </>
   );
 }

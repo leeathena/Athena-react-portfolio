@@ -1,0 +1,21 @@
+
+
+.Carousel-container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    }
+      
+    
+    h1 {
+        font-size: 1.5rem;
+        text-decoration: underline;
+        text-decoration-thickness: 10px;
+        text-align: center;
+        text-decoration-color: var(--medium-green);
+        padding:100px;
+        line-height: 2.5;
+        padding-bottom: 20px;
+    }
+    
+    

@@ -1,0 +1,36 @@
+:root {
+    --light-beige: #F0F1ED;
+    --medium-green: #808D63 ;
+    --dark-green: #4F6034;
+  }
+
+.contact {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+  }
+  
+
+h1 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-thickness: 10px;
+    text-align: center;
+    text-decoration-color: var(--medium-green);
+    padding:100px;
+    line-height: 2.5;
+    padding-bottom: 20px;
+}
+
+
+
+.contact img {
+    height: 50px;
+    width: auto;
+    margin: 20px; /* Adjust as needed for spacing around images */
+
+  }
+  
+
+
