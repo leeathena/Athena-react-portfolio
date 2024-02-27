@@ -5,7 +5,21 @@
     display: flex;
     justify-content: center;
     }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: var(--dark-green);
+    }
+
+    .carousel-control-prev {
+        margin-left: -200px; 
+      }
       
+      .carousel-control-next {
+        margin-right: -200px; 
+      }
+      
+
     
     h1 {
         font-size: 1.5rem;
@@ -18,4 +32,23 @@
         padding-bottom: 20px;
     }
     
-    
+
+/* Adjust the carousel height on small devices */
+@media (max-width: 768px) {
+    .carousel-item img {
+      height: 150px; /* Adjust based on your needs */
+      object-fit: cover; /* Ensure images cover the area well */
+    }
+
+    .carousel-control-prev {
+        margin-left: 10px; 
+      }
+      
+      .carousel-control-next {
+        margin-right: 20px; 
+      }
+      
+  }
+
+  
+  
