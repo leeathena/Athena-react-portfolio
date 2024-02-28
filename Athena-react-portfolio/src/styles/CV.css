@@ -1,6 +1,11 @@
+.Cv a {
+        text-decoration: none;
+
+}
+
 button{
+        
         background-color: transparent;
-        border: 2px solid var(--dark-green); 
         color: var(--dark-green); 
         padding: 10px 20px; 
         font-size: 4rem;
@@ -9,7 +14,6 @@ button{
 }
 
 .button-container{
-    
         margin: 50px auto;
         display: flex;
         justify-content: center;

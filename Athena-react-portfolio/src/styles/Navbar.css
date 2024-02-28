@@ -1,9 +1,3 @@
-:root {
-  --light-beige: #F0F1ED;
-  --medium-green: #808D63 ;
-  --dark-green: #4F6034;
-}
-
 .navbar {
   display: flex;
   background-color: var(--light-beige);
