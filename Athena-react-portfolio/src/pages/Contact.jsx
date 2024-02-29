@@ -4,6 +4,7 @@ import GithubImg from "../images/github.png";
 import EmailImg from "../images/email.png"; 
 import Navbar from "../components/Navbar";
 import "../styles/Contact.css";
+import ContactForm from '../components/Contact-form';
 
 
 
@@ -27,6 +28,7 @@ function Contact() {
           <img src={EmailImg} alt="Email icon" /> 
         </a>
       </div>
+      <ContactForm />
       </>
     );
   }

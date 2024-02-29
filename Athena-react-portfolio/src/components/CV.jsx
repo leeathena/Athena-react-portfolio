@@ -8,7 +8,7 @@ function Cv() {
     <>
     <h1> My CV</h1>
     <div className="Cv">
-    <a href="https://docs.google.com/document/d/1PBtnyAHaeC24ho_jusWUIJxUrD3Svmsk/edit?usp=sharing&ouid=113663373679697744067&rtpof=true&sd=true" 
+    <a href="https://drive.google.com/file/d/1-R1ec-Z6ll37n_f3yHly7JCLjtpq0BmO/view?usp=sharing" 
            className="button-container" 
            target="_blank" 
            rel="noopener noreferrer">
