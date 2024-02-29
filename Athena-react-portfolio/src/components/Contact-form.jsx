@@ -1,54 +1,56 @@
-import React, { useState } from 'react';
-import Form from 'react-bootstrap/Form';
+import React, { useRef, useState } from 'react';
 import "../styles/Contact-form.css";
+import emailjs from 'emailjs-com';
 
+const ContactUs = () => {
+  const form = useRef();
+  const [messageSent, setMessageSent] = useState(false);
 
-function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prevState => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    console.log(formData);
-    setFormData({
-      name: '',
-      email: '',
-      message: ''
-    });
+
+    emailjs
+      .sendForm(
+        'service_2o7mrcl', 
+        'template_rljts58', 
+        form.current, 
+        'xIE7dnlfzzy1doOiN'
+      )
+      .then(
+        () => {
+          console.log("message sent!");
+          setMessageSent(true); 
+          form.current.reset();
+        },
+        (error) => {
+          console.log("ERROR: message not sent!");
+        }
+      );
   };
 
   return (
-    <div>
-      <h1>Contact Me💬</h1>
-      <form onSubmit={handleSubmit} className="contact-form">
-    
-      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-        <Form.Label>Name</Form.Label>
-        <Form.Control type="name" placeholder="Name" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="name@example.com" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-        <Form.Label>Message</Form.Label>
-        <Form.Control as="textarea" rows={3} />
-      </Form.Group>
+    <>
+    <h1>Contact Me💬</h1>
+    <form className="form-container" ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="name" />
+      <label>Email</label>
+      <input type="email" name="email" />
+      <label>Message</label>
+      <textarea name="message" />
+       {messageSent && (
+        <div className="popup">
+          <p>Message sent!</p>
+        </div>
+      )}
 
-      </form>
-    </div>
+      <input className="submitButton" type="submit" value="Send" />
+       
+    </form>
+
+
+    </>
   );
-}
+};
 
-export default ContactForm;
+export default ContactUs;
