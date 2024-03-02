@@ -3,6 +3,7 @@ import Contact from "./Pages/Contact";
 import Resume from "./Pages/Resume";
 import { BrowserRouter  } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
+import "./styles/App.css";
 
 
 

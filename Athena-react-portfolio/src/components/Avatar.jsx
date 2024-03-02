@@ -1,5 +1,5 @@
 import "../styles/Avatar.css";
-import athenaAvatar from "../images/Athena-avatar.png"; 
+import athenaAvatar from "/Athena-avatar.png"; 
 
 
 

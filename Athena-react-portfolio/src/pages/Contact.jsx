@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import LinkedinImg from "../images/linkedin.png"; 
-import GithubImg from "../images/github.png"; 
-import EmailImg from "../images/email.png"; 
+import LinkedinImg from "/linkedin.png"; 
+import GithubImg from "/github.png"; 
+import EmailImg from "/email.png"; 
 import Navbar from "../components/Navbar";
 import ContactUs from '../components/Contact-form';
 import "../styles/Contact.css";

@@ -1,8 +1,21 @@
-# React + Vite
+# Athena's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Purpose of this project
+A portfolio utilising React skills I learnt from the bootcamp to showcase my skills and work to potential employees. 
+Also to showcase the other skills I  learned in html, css and javascript.
 
-Currently, two official plugins are available:
+## Features
+On this website you can find information about me, my past work, contact info to connect via Linkedin, GitHub and email, and a contact from that is linked to Emailjs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The website is responsive to mobile display.
+
+## Credit
+N/A
+
+## Deployed page screenshot
+### Desktop version
+
+### Mobile version
+
+## Deployed Page
+<strong> [Deployed page]( ) </strong>

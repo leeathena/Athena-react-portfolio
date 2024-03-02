@@ -6,7 +6,7 @@ import "../styles/CV.css";
 function Cv() {
   return (
     <>
-    <h1> My CV</h1>
+    <h1>My CV📁</h1>
     <div className="Cv">
     <a href="https://drive.google.com/file/d/1-R1ec-Z6ll37n_f3yHly7JCLjtpq0BmO/view?usp=sharing" 
            className="button-container" 
